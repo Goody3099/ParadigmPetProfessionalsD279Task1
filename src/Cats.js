@@ -45,7 +45,7 @@ const Cats = () => (
             </div>
         </section>
         <section className="sectionLeft">
-            <img src="/assets/images/CatAndBird.jpg" alt="Cat and Bird Image" className="sectionImage" />
+            <img src="/assets/images/CatAndBird.jpg" alt="Cat and Bird" className="sectionImage" />
             <div className="sectionText">
                 <h2>Seven Years and More</h2>
                 <p>
