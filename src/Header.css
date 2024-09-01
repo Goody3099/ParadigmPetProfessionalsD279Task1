@@ -1,0 +1,142 @@
+header {
+    background-color: #6699CC;
+    color: #000000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.headerImageLogo {
+    height: 100px;
+    width: auto;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.headerNavLinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.headerNavLinks li {
+    margin: 0 15px;
+}
+
+.headerNavLinks a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.headerNavLinks a:hover {
+    color: #BDBDBD;
+    text-decoration: underline;
+}
+
+.headerSearchForm {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.headerSearchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+}
+
+.headerSearchButton {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    background-color: #6699CC;
+    color: #fff;
+    cursor: pointer;
+}
+
+.headerSearchButton:hover {
+    background-color: #BDBDBD;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .headerLogo a {
+        font-size: 24px;
+    }
+
+    .headerNavLinks a {
+        font-size: 18px;
+    }
+
+    .headerNavLinks li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerLogo a {
+        font-size: 20px;
+    }
+
+    .headerNav {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .headerNavLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .headerNavLinks li {
+        margin: 10px 0;
+    }
+
+    .headerNavLinks a {
+        font-size: 16px;
+    }
+
+    .headerSearchForm {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .headerLogo a {
+        font-size: 18px;
+    }
+
+    .headerNavLinks a {
+        font-size: 14px;
+    }
+
+    .headerNavLinks li {
+        margin: 5px 0;
+    }
+}

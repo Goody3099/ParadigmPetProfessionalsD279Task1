@@ -1,0 +1,42 @@
+.content {
+    padding: 0 200px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sectionLeft {
+    flex-direction: row;
+}
+
+.sectionRight {
+    flex-direction: row-reverse;
+}
+
+.sectionImage {
+    width: 30%;
+    height: auto;
+    margin: 0 20px;
+}
+
+.sectionText {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    .sectionImage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sectionText {
+        width: 100%;
+    }
+}
